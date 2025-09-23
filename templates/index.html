@@ -9,14 +9,14 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
     <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>
-      AutoComplete : Himanshu Tripathi
+      AutoComplete
     </title>
    
     <style> 
 input[type=text] {
   /*width: 130px;*/
   box-sizing: border-box;
-  border: 2px solid #ccc;
+  border: 2px solid #d55656ff;
   border-radius: 4px;
   font-size: 16px;
   background-color: white;
@@ -63,14 +63,8 @@ input[type=text]:focus {
     <div class="s005">
       <form method="POST" action="/predict">
         <fieldset>
-          <legend>Type Word Or Sentence And Get Next Predicted Words!!</legend>
-          <center ><b class="glow" style="color: white; font-size: 20px;">Made by : Himanshu Tripathi</b> &nbsp;&nbsp; <b>
-            <a style="text-decoration: none; color: white;" href="https://www.facebook.com/iamhimanshu0"><i class="fa fa-facebook-square fa-3x" aria-hidden="true"></i></a>&nbsp;&nbsp; 
-           <a style="text-decoration: none; color: white;" href="https://www.linkedin.com/in/iamhimanshu0/"><i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i></a>&nbsp;&nbsp; 
-            <a style="text-decoration: none; color: white;" href="https://github.com/iamhimanshu0"><i class="fa fa-github-square fa-3x" aria-hidden="true"></i></a>&nbsp;&nbsp; 
-             <a style="text-decoration: none; color: white;" href="https://www.instagram.com/iamhimanshu0/"><i class="fa fa-instagram fa-3x" aria-hidden="true"></i></a>&nbsp;&nbsp; 
-              <a style="text-decoration: none; color: white;" href="https://www.youtube.com/c/himanshutripathi"><i class="fa fa-youtube-square fa-3x" aria-hidden="true"></i></a>&nbsp;&nbsp;            
-          </b></center>
+          <legend>Type Word Or Sentence to /predict next Word</legend>
+           
           <br><br>
           <div class="inner-form">
             <div class="input-field">
@@ -92,7 +86,7 @@ input[type=text]:focus {
             <span style="color: black; font-weight: bold;">{{ i }}</span>
              -->
              {% for i in t %}
-               <span class="glow" style="color: white; font-weight: bold; font-size: 20px;">{{ i }}</span>
+               <span  style="color: white; font-weight: bold; font-size: 20px;">{{ i }}</span>
              {% endfor %}
 
 
